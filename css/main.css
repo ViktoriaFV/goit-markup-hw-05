@@ -43,6 +43,9 @@ ul
 
 .header-hover:hover{
     color: #2196F3;
+    transition-property: color;
+    transition-timing-function: var(--time-fuction);
+    transition-duration: 5s;
   }
 
 
@@ -109,7 +112,7 @@ ul
     {
         transition-property: color;
         transition-timing-function: var(--time-fuction);
-        transition-duration: 250ms;
+        transition-duration: 5s;
            
     }
 
@@ -181,7 +184,7 @@ ul
     
     transition-property:  color;
     transition-timing-function: var(--time-fuction);
-    text-decoration: 10s;
+    transition-duration: 250ms;
 } 
     
 
@@ -864,9 +867,10 @@ ul
 /* backdrop */
 .backdrop
 {
-    position: fixed;
+    position: fixed; 
+    /* position: relative; */
     width: 100%;
-    height: 1024px;
+    height: 100%;
     left: 0px;
     top: 0px;
 
@@ -879,13 +883,14 @@ ul
 }
 .modal
 {
-    position: absolute;
-   
-    top: 50%;
-    left:50%;
+     position: absolute;
+    /* position: relative;  */
+   min-width: 528px;
+    min-height: 581px;
+  top:50%;
+   left:50%; 
 
-    width: 528px;
-    height: 581px;
+    
     transform: translate(-50%, -50%);
 
     background: #FFFFFF;
@@ -896,7 +901,10 @@ ul
 {
     width: 30px;
     height: 30px;
-    margin:  8px 543px 8px 490px;
+    position: absolute;
+    top: 8px;
+    left:490px ;
+    /* margin:  8px 543px 8px 490px; */
     padding: 0;
     display: inline-block;
     align-items: center;
