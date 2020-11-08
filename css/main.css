@@ -251,7 +251,7 @@ ul
     background-image: url(../img/ImgOverlay.png),  url(../img/Img7.jpg);
     background-position: center;
     text-align: center;
-    
+    background-repeat: no-repeat;
     letter-spacing: 0.06em;
     padding-bottom: 200px;
     padding-top: 200px;
